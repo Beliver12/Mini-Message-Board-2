@@ -1,0 +1,23 @@
+<body>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+        <h1>Homepage</h1>
+    </head>
+    <nav>
+        <ul>
+            <% for (let i = 0; i < messages.length; i++) { %>
+                <h3>Message <%=[i]%></h3>
+                <li>
+                    <p><%= messages[i].text %></p>
+                    <p><%= messages[i].user %></p>
+                    <p><%= messages[i].added %></p>
+                    
+                    <a href="/message/<%=[i]%>"  id=<%=[i]%>><button>Open</button></a>
+                </li>
+           <% } %>
+        </ul>
+        <a href="/new">
+            <span>Create new User ==></span>
+        </a>
+    </nav>
+</body>

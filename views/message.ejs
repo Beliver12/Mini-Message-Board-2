@@ -1,0 +1,19 @@
+<nav>
+    <ul>
+        <% for (let i = 0; i < message.length; i++) { %>
+            <h3>Message <%=[i]%></h3>
+            <li>
+                <p><%= message[i].text %></p>
+                <p><%= message[i].user %></p>
+                <p><%= message[i].added %></p>
+                
+            </li>
+       <% } %>
+    </ul>
+    <a href="/new">
+        <span>Create new User ==></span>
+    </a>
+    <a href="/">
+        <span>Home ==></span>
+    </a>
+</nav>

@@ -1,0 +1,26 @@
+body {
+    color: white;
+    background-color: rgb(50, 49, 49);
+  }
+
+  a {
+    color: wheat;
+  }
+
+  li {
+    border: 1px solid white;
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button, a{
+    width: 40%;
+    align-self: center;
+  }
+
+  button:hover{
+    background-color: blue;
+    
+  }
