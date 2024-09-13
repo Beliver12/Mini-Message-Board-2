@@ -5,12 +5,12 @@
     </head>
     <nav>
         <ul>
-            <% for (let i = 0; i < messages.length; i++) { %>
+            <% for (let i = 0; i < messagess.rows.length; i++) { %>
                 <h3>Message <%=[i]%></h3>
                 <li>
-                    <p><%= messages[i].text %></p>
-                    <p><%= messages[i].user %></p>
-                    <p><%= messages[i].added %></p>
+                    <p><%= messagess.rows[i].text %></p>
+                    <p><%= messagess.rows[i].name %></p>
+                    <p><%= messagess.rows[i].date %></p>
                     
                     <a href="/message/<%=[i]%>"  id=<%=[i]%>><button>Open</button></a>
                 </li>
